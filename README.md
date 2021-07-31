@@ -1,8 +1,8 @@
 ![Bioinformatics Toolbox](toolbox.png)
 
-# Bioinformatics Toolbox
+# Bioinformatics Toolbox Light
 
-`bioinformatics-toolbox` is a [Docker](https://www.docker.com/) container for common bioinformatics and genomics related tools.
+`bioinformatics-toolbox-light` is a [Docker](https://www.docker.com/) container for common bioinformatics and genomics related tools.
 
 The list of the installed tools and packages can be found [here](Tools.md)
 
