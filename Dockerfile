@@ -518,34 +518,6 @@ tar zxvf infernal-1.1.4.tar.gz && \
 cd $SETUPDIR/infernal-1.1.4/ && \
 ./configure && make && make install
 
-# GECCO
-#######
-RUN pip install gecco-tool
-
-# DeepBGC
-#########
-RUN apt-get update && \
-apt-get -y install software-properties-common && \
-add-apt-repository ppa:deadsnakes/ppa && \
-apt-get -y install python3.7
-RUN python3.7 -m pip install kiwisolver --force
-RUN python3.7 -m pip install deepbgc
-RUN python3.7 -m pip install deepbgc[hmm]
-RUN deepbgc download
-
-# antiSMASH
-###########
-RUN apt-get update && \
-apt-get -y install apt-transport-https
-RUN wget http://dl.secondarymetabolites.org/antismash-stretch.list -O /etc/apt/sources.list.d/antismash.list && \
-wget -q -O- http://dl.secondarymetabolites.org/antismash.asc | apt-key add -
-RUN apt-get update && \
-apt-get -y install hmmer2 hmmer diamond-aligner fasttree prodigal ncbi-blast+ muscle glimmerhmm
-
-RUN cd $SETUPDIR/
-RUN wget https://dl.secondarymetabolites.org/releases/6.0.0/antismash-6.0.0.tar.gz && tar -zxf antismash-6.0.0.tar.gz
-RUN pip install ./antismash-6.0.0
-RUN download-antismash-databases
 
 ##########################################################################################
 ##########################################################################################
@@ -613,15 +585,15 @@ RUN echo "#!/usr/bin/bash" > $SETUPDIR/init.sh
 RUN echo "export PATH=$PATH:/usr/local/ncbi/sra-tools/bin/:/usr/local/ncbi/ngs-tools/bin/:/usr/local/ncbi/ncbi-vdb/bin:/usr/local/miniconda3/bin:/apps/gatk:/apps/IGV" >> $SETUPDIR/init.sh
 RUN echo "source /etc/profile.d/*" >> $SETUPDIR/init.sh
 RUN echo "echo '----------------------------------------'" >> $SETUPDIR/init.sh
-RUN echo "echo 'Welcome to Bioinformatics Toolbox (v1.1)'" >> $SETUPDIR/init.sh
-RUN echo "echo '----------------------------------------'" >> $SETUPDIR/init.sh
+RUN echo "echo 'Welcome to Bioinformatics Toolbox Light (v1.0)'" >> $SETUPDIR/init.sh
+RUN echo "echo '----------------------------------------------'" >> $SETUPDIR/init.sh
 RUN echo "echo 'Bioinformatics Toolbox is a docker container for bioinformatics'" >> $SETUPDIR/init.sh
 RUN echo "echo " >> $SETUPDIR/init.sh
 RUN echo "echo 'For a list of installed tools, please visit: '" >> $SETUPDIR/init.sh
-RUN echo "echo 'https://github.com/ahmedmoustafa/bioinformatics-toolbox/blob/master/Tools.md'" >> $SETUPDIR/init.sh
+RUN echo "echo 'https://github.com/ahmedmoustafa/bioinformatics-toolbox-light/blob/master/Tools.md'" >> $SETUPDIR/init.sh
 RUN echo "echo " >> $SETUPDIR/init.sh
 RUN echo "echo 'If you would like to request adding certain tools or report a problem,'" >> $SETUPDIR/init.sh
-RUN echo "echo 'please submit an issue https://github.com/ahmedmoustafa/bioinformatics-toolbox/issues'" >> $SETUPDIR/init.sh
+RUN echo "echo 'please submit an issue https://github.com/ahmedmoustafa/bioinformatics-toolbox-light/issues'" >> $SETUPDIR/init.sh
 RUN echo "echo " >> $SETUPDIR/init.sh
 RUN echo "echo 'If you use Bioinformatics Toolbox in your work, please cite: '" >> $SETUPDIR/init.sh
 RUN echo "echo '10.5281/zenodo.5069735'"  >> $SETUPDIR/init.sh
@@ -673,8 +645,6 @@ seqkit version ; \
 fastp --version ; \
 fqtrim -V ; \
 seqmagick --version ; \
-gecco --version ; \
-deepbgc info ; \
 /apps/gatk/gatk --list ; \
 /apps/IGV/igv.sh --version ; \
 docker --version ; \
