@@ -4,7 +4,7 @@
 
 Setting up a bioinformatics workstation can tedious and frustrating process, especially when it comes to that endless loop of dependencies between the tools and libraries. So, an out-of-the-box preinstalled workstation can save you a lot of time and hassle and allow you to focus on the research questions you are addressing. This applies to a BLAST search or genome mapping running on your personal laptop or a high-performance computing server at your institution.
 
-This short tutorial explains how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these steps, you will have a working system for bioinformatics analyses.
+This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these steps, you will have a working system for bioinformatics analyses.
 
 Docker is a [virtualization](https://en.wikipedia.org/wiki/Virtualization) solution that separates the virtual machine (the container) and the actual operating system. This separation includes all installations, configurations, and computes. So in a way, what happens in the Docker stays in the Docker.
 
