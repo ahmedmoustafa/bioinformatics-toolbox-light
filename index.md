@@ -30,7 +30,7 @@ Please refer to [the Docker Desktop documentation](https://docs.docker.com/deskt
 **The Docker Desktop Installed (on Mac)**
 
 ## Step 2. Install Bioinformatics Toolbox Image
-Go to your Terminal (in Mac or Linux) or Command (in Windows) and run the following command:
+Now Go to your Terminal (in Mac or Linux) or Command (in Windows) and run the following command:
 
 `docker run -it --name repo ghcr.io/ahmedmoustafa/bioinformatics-toolbox-light clone the-toolbox-light`
 
