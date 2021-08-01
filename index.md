@@ -2,7 +2,7 @@
 
 ![DNA Mutation](https://media.gettyimages.com/vectors/mutation-vector-id94364734?s=1024x1024)
 
-Setting up a bioinformatics workstation can be a tedious and frustrating process. Sometimes, it might require a system administrator, especially when it comes to the not-uncommon endless loop of dependencies between the tools and libraries. So, an out-of-the-box preinstalled workstation will save you a lot of time and hassle and allow you to focus on the research questions you are addressing. This applies to a BLAST search or genome mapping running on your personal laptop on your desk or a high-performance computing server in the data center at your institution.
+Setting up a bioinformatics workstation can be a tedious and frustrating process. Sometimes, it might require a system administrator, especially when it comes to the not-uncommon endless loop of dependencies between the tools and libraries. So, an out-of-the-box preinstalled workstation can save a lot of time and hassle and allow you to focus on the research questions you are addressing. This applies to a BLAST search or genome mapping running on your personal laptop on your desk or a high-performance computing server in the data center at your institution.
 
 This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these steps, you will have a working system for bioinformatics analyses.
 
