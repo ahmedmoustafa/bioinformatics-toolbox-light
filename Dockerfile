@@ -206,29 +206,6 @@ gcc -DOPENMP -fopenmp -O3 -finline-functions -funroll-loops -Wall -o FastTreeMP 
 mv FastTree /usr/local/bin && \
 mv FastTreeMP /usr/local/bin
 
-
-# PhyML
-#######
-RUN cd $SETUPDIR/ && \
-git clone https://github.com/stephaneguindon/phyml.git && \
-cd $SETUPDIR/phyml/ && \
-sh ./autogen.sh && ./configure && make && make install
-
-
-# Pplacer
-#########
-RUN cd $SETUPDIR/ && \
-wget -t 0 https://github.com/matsen/pplacer/releases/download/v1.1.alpha19/pplacer-linux-v1.1.alpha19.zip && \
-unzip pplacer-linux-v1.1.alpha19.zip && \
-cd $SETUPDIR/pplacer-Linux-v1.1.alpha19/ && \
-mv guppy /usr/local/bin/ && \
-mv pplacer /usr/local/bin/ && \
-mv rppr /usr/local/bin/ && \
-cd $SETUPDIR/pplacer-Linux-v1.1.alpha19/scripts/ && \
-python setup.py install
-
-##########################################################################################
-##########################################################################################
 ##########################################################################################
 ##########################################################################################
 
@@ -280,8 +257,7 @@ bcftools  --version ; \
 bamtools --version ; \
 vcftools --version ; \
 bedtools --version ; \
-seqkit version ; \
-fastp --version
+seqkit version
 
 ##########################################################################################
 ##########################################################################################
