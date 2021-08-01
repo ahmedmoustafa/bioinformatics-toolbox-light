@@ -265,7 +265,7 @@ seqkit version
 ##########
 ##########
 
-RUN cd /apps/ && git clone https://github.com/ahmedmoustafa/coronadb.git
+RUN mkdir /data/ && cd /data/ && git clone https://github.com/ahmedmoustafa/coronadb.git
 
 ##########################################################################################
 ##########################################################################################
