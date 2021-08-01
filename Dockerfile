@@ -649,7 +649,7 @@ seqmagick --version ; \
 /apps/IGV/igv.sh --version ; \
 docker --version ; \
 /usr/local/miniconda3/bin/conda --version ; \
-nextflow -version ; \
+nextflow -version
 
 ##########################################################################################
 ##########################################################################################
