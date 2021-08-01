@@ -24,13 +24,8 @@ Docker is available for Windows, Mac OS (for Apple and Intel chips), and Linux (
 ![Docker Desktop Homepage](images/docker-desktop-homepage.png)
 **The Docker Desktop Homepage**
 
-
-{% figure caption:"The Docker Desktop Homepage" %}
-    ![The Docker Desktop Homepage Again](images/docker-desktop-homepage.png)
-{% endfigure %}
-
-### The Docker Desktop Installed (on Mac)
 ![Docker Desktop Installed](images/docker-desktop-installed.png)
+**The Docker Desktop Installed (on Mac)**
 
 ## Step 2. Install Bioinformatics Toolbox Image
 Go to your Terminal (in Mac or Linux) or Command (in Windows) and run the following command:
