@@ -38,7 +38,7 @@ docker run -it --name the-toolbox-light ghcr.io/ahmedmoustafa/bioinformatics-too
 
 The above command will attempt to launch the container, but the image is not locally available yet, so the image will be automatically downloaded for you from the Github's Docker registry [ghcr.io](http://ghcr.io).
 
-This step will take time, depending on the speed of your Internet connection. In my case, it took about two hours to download the 20G image (this is the light version. The full version is larger than 40G). So, maybe it is time to go for coffee
+This step will take time, depending on the speed of your Internet connection. In my case, it took about two hours to download the 20G image (This is the light version. The full version is larger than 40G). So, maybe it is time to go for coffee
 
 ![Coffee](https://media.gettyimages.com/photos/aerial-view-of-various-coffee-picture-id1027165934?s=2048x2048)
 
