@@ -34,7 +34,7 @@ Now go to your Terminal (in Mac or Linux) or Command (in Windows) and run the fo
 docker run -it --name the-toolbox-light ghcr.io/ahmedmoustafa/bioinformatics-toolbox-light
 ```
 
-This command will attempt to launch the container, but the image is not locally available yet, so the image will be automatically downloaded for you from the registry. After the download is complete and successful, the container will start with all the already preinstalled tools. Then, if the image in the registry gets updated, the same command will take care of obtaining the updates, usually incremental.
+This command will attempt to launch the container, but the image is not locally available yet, so the image will be automatically downloaded for you from the Github's Docker registry [ghcr.io](http://ghcr.io). After the download is complete and successful, the container will start with all the already preinstalled tools. Then, if the image in the registry gets updated, the same command will take care of obtaining the updates, usually incremental.
 
 
 ```bash
