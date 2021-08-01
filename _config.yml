@@ -1,3 +1,5 @@
-theme: jekyll-theme-minima
+remote_theme: pages-themes/midnight@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 # logo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tool_box_icon-01.svg/165px-Tool_box_icon-01.svg.png
 google_analytics: G-1LLWRMJVVF
