@@ -1,5 +1,4 @@
-plugins:
-  - jekyll-figure
+plugins: ekyll-figure
 theme: jekyll-theme-minimal
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Tool_box_icon-01.svg/165px-Tool_box_icon-01.svg.png
 show_downloads: "true"
