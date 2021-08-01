@@ -25,8 +25,8 @@ Docker is available for Windows, Mac OS (for Apple and Intel chips), and Linux (
 **The Docker Desktop Homepage**
 
 
-{% figure caption:"Le logo de **Jekyll** et son clin d'oeil à Robert Louis Stevenson" %}
-    ![Le logo de Jekyll](images/docker-desktop-homepage.png)
+{% figure caption:"The Docker Desktop Homepage" %}
+    ![The Docker Desktop Homepage Again](images/docker-desktop-homepage.png)
 {% endfigure %}
 
 ### The Docker Desktop Installed (on Mac)
