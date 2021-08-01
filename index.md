@@ -31,7 +31,7 @@ Please refer to [the Docker Desktop documentation](https://docs.docker.com/deskt
 Now go to your Terminal (in Mac or Linux) or Command (in Windows) and run the following command:
 
 ```bash
-docker run -it --name repo ghcr.io/ahmedmoustafa/bioinformatics-toolbox-light clone the-toolbox-light
+docker run -it --name the-toolbox-light ghcr.io/ahmedmoustafa/bioinformatics-toolbox-light
 ```
 
 This command will attempt to launch the container, but the image is not locally available yet, so the image will be automatically downloaded for you from the registry. After the download is complete and successful, the container will start with all the already preinstalled tools. Then, if the image in the registry gets updated, the same command will take care of obtaining the updates, usually incremental.
