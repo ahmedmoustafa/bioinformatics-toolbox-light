@@ -2,7 +2,7 @@
 
 # How to build a bioinformatics workstation in two steps
 
-Setting up a bioinformatics workstation can tedious and frustrating process, especially when it comes to that endless loop of dependencies between the tools and libraries. So, an out-of-the-box preinstalled workstation can save you a lot of time and hassle and allow you to focus on the research questions you are addressing. This applies to a BLAST search or genome mapping running on your personal laptop or a high-performance computing server at your institution.
+Setting up a bioinformatics workstation can tedious and frustrating process, especially when it comes to the not-uncommon endless loop of dependencies between the tools and libraries. So, an out-of-the-box preinstalled workstation can save you a lot of time and hassle and allow you to focus on the research questions you are addressing. This applies to a BLAST search or genome mapping running on your personal laptop or a high-performance computing server at your institution.
 
 ![Servers in server room](https://media.gettyimages.com/photos/server-room-picture-id182710787?s=1024x1024)
 
