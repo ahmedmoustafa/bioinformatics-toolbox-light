@@ -219,8 +219,8 @@ RUN cd $SETUPDIR/
 RUN echo "#!/usr/bin/bash" > $SETUPDIR/init.sh
 RUN echo "export PATH=$PATH:/usr/local/ncbi/sra-tools/bin/:/usr/local/ncbi/ngs-tools/bin/:/usr/local/ncbi/ncbi-vdb/bin:/usr/local/miniconda3/bin:/apps/gatk:/apps/IGV" >> $SETUPDIR/init.sh
 RUN echo "source /etc/profile.d/*" >> $SETUPDIR/init.sh
-RUN echo "echo '----------------------------------------'" >> $SETUPDIR/init.sh
-RUN echo "echo 'Welcome to Bioinformatics Toolbox Light (v1.0)'" >> $SETUPDIR/init.sh
+RUN echo "echo '----------------------------------------------'" >> $SETUPDIR/init.sh
+RUN echo "echo 'Welcome to Bioinformatics Toolbox Light (v1.1)'" >> $SETUPDIR/init.sh
 RUN echo "echo '----------------------------------------------'" >> $SETUPDIR/init.sh
 RUN echo "echo 'Bioinformatics Toolbox is a docker container for bioinformatics'" >> $SETUPDIR/init.sh
 RUN echo "echo " >> $SETUPDIR/init.sh
