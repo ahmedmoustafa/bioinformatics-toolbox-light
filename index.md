@@ -58,7 +58,7 @@ So let's move to to the `coronadb` directory using the following command:
 cd /data/coronadb
 ```
 
-The query sequence is the first published SARS-CoV-2 genome from Egypt, which was collected in March 2020, [MW451601](https://www.ncbi.nlm.nih.gov/nuccore/MW451601), and it is stored in `myquery.fas` located in the same directory.
+The query sequence is the first published SARS-CoV-2 genome from Egypt, which was collected in March 2020, [MW451601](https://www.ncbi.nlm.nih.gov/nuccore/MW451601), and it is stored in [`myquery.fas`](https://github.com/ahmedmoustafa/coronadb/blob/main/myquery.fas) located in the same directory.
 
 Finally, to run the BLAST search, use the following command to search [MW451601](https://www.ncbi.nlm.nih.gov/nuccore/MW451601) against `coronadb` and display the top 10 matches in a tabular format:
 
