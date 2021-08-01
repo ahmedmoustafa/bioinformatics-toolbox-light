@@ -10,6 +10,8 @@ Setting up a bioinformatics workstation can be a tedious and frustrating process
 
 This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these steps, you will have a working system for bioinformatics analyses.
 
+![Container lift with shipping container in port](https://media.gettyimages.com/photos/container-lift-with-shipping-container-in-port-picture-id1032071672?s=2048x2048)
+
 Docker is a [virtualization](https://en.wikipedia.org/wiki/Virtualization) solution that separates the virtual machine (the container) and the actual operating system. This separation includes all installations, configurations, and computes. So in a way, what happens in the Docker stays in the Docker.
 
 ![USA, Nevada, Las Vegas, Welcome To Fabulous Las Vegas Nevada Sign](https://media.gettyimages.com/photos/nevada-las-vegas-welcome-to-fabulous-las-vegas-nevada-sign-picture-id1085183326?s=1024x1024)
