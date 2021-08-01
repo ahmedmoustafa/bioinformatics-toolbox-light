@@ -21,6 +21,8 @@ I created a Docker image, [`bioinformatics-toolbox`](https://ahmedmoustafa.githu
 ## Step 1. Install Docker
 Docker is available for Windows, Mac OS (for Apple and Intel chips), and Linux ([Ubuntu](https://ubuntu.com/), [CentOS](https://www.centos.org/), [Fedora](https://getfedora.org/), and others). Go to [the Docker Desktop product page](https://www.docker.com/products/docker-desktop) to download the correct version for your systems and install it.
 
+![Docker Desktop](images/docker-desktop.png)
+
 ## Step 2. Install Bioinformatics Toolbox Image
 Go to your Terminal (in Mac or Linux) or Command (in Windows) and run the following command:
 
