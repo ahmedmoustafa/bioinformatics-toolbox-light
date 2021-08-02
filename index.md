@@ -8,11 +8,11 @@ This short tutorial shows how to build a bioinformatics workstation on any compu
 
 ![Container lift with shipping container in port](https://media.gettyimages.com/photos/container-lift-with-shipping-container-in-port-picture-id1032071672?s=2048x2048)
 
-Docker is a [virtualization](https://en.wikipedia.org/wiki/Virtualization) solution that separates the virtual machine (the container) from the actual operating system. This separation includes all installations, configurations, and computes that happen within the container. So in a way, what happens in the Docker stays in the Docker.
+Docker is a [virtualization](https://en.wikipedia.org/wiki/Virtualization) engine, and more accurately, [containerization](https://www.ibm.com/cloud/learn/containerization). The two terms are not entirely the same, but we will use them interchangeably here for the sake of simplicity. This engine separates the virtual machine (the container) from the hosting operating system (e.g., your Windows or Mac). This separation includes all installations, configurations, and computes that happen within the container. So in a way, what happens in Docker stays in Docker.
 
 ![USA, Nevada, Las Vegas, Welcome To Fabulous Las Vegas Nevada Sign](https://media.gettyimages.com/photos/nevada-las-vegas-welcome-to-fabulous-las-vegas-nevada-sign-picture-id1085183326?s=1024x1024)
 
-The beauty of virtualization is [**portability**](https://en.wikipedia.org/wiki/Porting) (run it anywhere) and [**reproducibility**](https://en.wikipedia.org/wiki/Reproducibility) (same infrastructure shared and available for anyone to rerun exact analyses and reproduce exact results). First, create a container with a specific set of tools and settings. Then, you can share and distribute this exact image privately or publicly so others can use it as is without having to reinvent the wheel. There are other virtualization tools besides Docker, for example, Oracle’s VirtualBox.
+The beauty of virtualization/containerization is [**portability**](https://en.wikipedia.org/wiki/Porting) (run it anywhere) and [**reproducibility**](https://en.wikipedia.org/wiki/Reproducibility) (same infrastructure shared and available for anyone to rerun exact analyses and reproduce exact results). Usually, one creates a Docker image (we are not covering that here) with a specific set of tools and settings. Then, they share and distribute this exact image privately or publicly so others can use it as is without having to reinvent the wheel. There are other virtualization tools besides Docker, for example, [Oracle’s VirtualBox](https://www.virtualbox.org/) and [VMware](https://www.vmware.com/).
 
 I created a Docker image, [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/), with the standard and essential bioinformatics packages and languages, including BLAST, [MAFFT](https://mafft.cbrc.jp/alignment/software/), [Samtools](http://www.htslib.org/), and many other tools. For the complete list of the included tools, see [here](https://ahmedmoustafa.github.io/bioinformatics-toolbox/Tools.html).
 
@@ -52,7 +52,7 @@ The next part is a toy example for using the bioinformatics toolbox container, w
 
 ![Vials of blood in a centrifuge being tested for coronavirus infection](https://media.gettyimages.com/illustrations/coronaviruses-research-conceptual-illustration-illustration-id1205741280?s=2048x2048)
 
-So let's move to to the `coronadb` directory using the following command:
+So let's move to the `coronadb` directory using the following command:
 
 ```bash
 cd /data/coronadb
@@ -60,7 +60,7 @@ cd /data/coronadb
 
 The query sequence is the first published SARS-CoV-2 genome from Egypt, which was collected in March 2020, [MW451601](https://www.ncbi.nlm.nih.gov/nuccore/MW451601), and it is stored in [`myquery.fas`](https://github.com/ahmedmoustafa/coronadb/blob/main/myquery.fas) located in the same directory.
 
-Finally, to run the BLAST search, use the following command to search [MW451601](https://www.ncbi.nlm.nih.gov/nuccore/MW451601) against `coronadb` and display the top 10 matches in a tabular format:
+Finally, to run BLAST, use the following command to search [MW451601](https://www.ncbi.nlm.nih.gov/nuccore/MW451601) against `coronadb` and display the top 10 matches in a tabular format:
 
 ```bash
 blastn -db coronadb -query myquery.fas -max_target_seqs 10 -outfmt 6
