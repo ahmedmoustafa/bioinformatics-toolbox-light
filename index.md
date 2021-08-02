@@ -4,7 +4,7 @@
 
 Setting up a bioinformatics workstation can be a tedious and frustrating process. Sometimes, it might require a computer guru to set up bioinformatics tools, especially when it comes to the not-uncommon endless loop of dependencies between the tools and the libraries. So, an out-of-the-box preinstalled workstation can save a lot of time and hassle and allow you to focus on addressing your research questions instead of struggling to install and configure software packages. This applies to, for example, a BLAST search or genome mapping running on your personal laptop on your desk or a high-performance computing server in the data center at your institution.
 
-This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these two steps, you will have a working system for bioinformatics analyses. What this tutorial is not is how to use the different bioinformatics tools incorporated in the Docker image that we will install.
+This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these two steps, you will have a working system for bioinformatics analyses. What this tutorial is not is how to use the different bioinformatics tools bundled in the Docker image that we will install.
 
 ![Container lift with shipping container in port](https://media.gettyimages.com/photos/container-lift-with-shipping-container-in-port-picture-id1032071672?s=2048x2048)
 
@@ -14,7 +14,7 @@ Docker is a [virtualization](https://en.wikipedia.org/wiki/Virtualization) engin
 
 The beauty of virtualization/containerization is [**portability**](https://en.wikipedia.org/wiki/Porting) (run it anywhere) and [**reproducibility**](https://en.wikipedia.org/wiki/Reproducibility) (same infrastructure shared and available for anyone to rerun exact analyses and reproduce exact results). Usually, one creates a Docker image (we are not covering that here) with a specific set of tools and settings. Then, they share and distribute this exact image privately or publicly so others can use it as is without having to reinvent the wheel. There are other virtualization tools besides Docker, for example, [Oracle’s VirtualBox](https://www.virtualbox.org/) and [VMware](https://www.vmware.com/).
 
-There are probably 100s of containers for bioinformatics, and they come in all sizes and shapes, from containers for specific individual tools to containers for everything under the sun (Try to Google [bioinformatics containers](https://www.google.com/search?q=bioinformatics+containers)). Here, we will use a Docker image that I created called the [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/). It contains a standard and essential set of bioinformatics packages and languages, including BLAST, MAFFT, BWA, R, and many other tools for the different types of bioinformatics tasks. For the complete list of the included tools, see [here](https://ahmedmoustafa.github.io/bioinformatics-toolbox/Tools.html).
+There are probably 100s of containers for bioinformatics, and they come in all sizes and shapes, from containers for specific individual tools to containers for everything under the sun (Try to Google [bioinformatics containers](https://www.google.com/search?q=bioinformatics+containers)). Here, we will use a Docker image that I created called the [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/), based on Ubuntu 20.04. It contains a standard and essential set of bioinformatics packages and languages, including BLAST, MAFFT, BWA, R, and many other tools for the different types of bioinformatics tasks. For the complete list of the included tools, see [here](https://ahmedmoustafa.github.io/bioinformatics-toolbox/Tools.html).
 
 The following is a walkthrough of the *two* steps to get your bioinformatics workstation up and running. However, to speed up the download, we will use a smaller version of the toolbox, `bioinformatics-toolbox-light`, with a subset of the tools, as a proof-of-concept.
 
@@ -68,4 +68,6 @@ After the BLAST search is complete, it will generate the following output:
 
 ![BLAST output](images/blast-output.png)
 
-With that, now you have your bioinformatics workstation 🤗 If you want the full stack image, you may follow the same steps omitting `-light` part to install the [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/). Happy Bioinformatics! 😉
+With that, now you have your bioinformatics workstation 🤗 If you want the full stack image, you may follow the same steps omitting `-light` part to install the [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/).
+
+Happy Bioinformatics! 😉
