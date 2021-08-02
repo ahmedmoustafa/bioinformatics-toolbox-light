@@ -4,7 +4,7 @@
 
 Setting up a bioinformatics workstation can be a tedious and frustrating process. Sometimes, it might require a computer guru to set up bioinformatics tools, especially when it comes to the not-uncommon endless loop of dependencies between the tools and the libraries. So, an out-of-the-box preinstalled workstation can save a lot of time and hassle and allow you to focus on addressing your research questions instead of struggling to install and configure software packages. This applies to, for example, a BLAST search or genome mapping running on your personal laptop on your desk or a high-performance computing server in the data center at your institution.
 
-This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these two steps, you will have a working system for bioinformatics analyses.
+This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these two steps, you will have a working system for bioinformatics analyses. What this tutorial is not is how to use the different bioinformatics tools incorporated in the Docker image that we will install.
 
 ![Container lift with shipping container in port](https://media.gettyimages.com/photos/container-lift-with-shipping-container-in-port-picture-id1032071672?s=2048x2048)
 
@@ -68,4 +68,4 @@ After the BLAST search is complete, it will generate the following output:
 
 ![BLAST output](images/blast-output.png)
 
-With that, now you have your bioinformatics workstation 🤗 Happy Bioinformatics! 😉
+With that, now you have your bioinformatics workstation 🤗 If you want the full stack image, you may follow the same steps omitting `-light` part to install the [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/). Happy Bioinformatics! 😉
