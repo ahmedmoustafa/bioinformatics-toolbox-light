@@ -68,6 +68,8 @@ After the BLAST search is complete, it will generate the following output:
 
 ![BLAST output](images/blast-output.png)
 
-With that, now you have your bioinformatics workstation 🤗 If you want the full stack image, you may follow the same steps omitting `-light` part to install the [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/).
+With that, now you have your bioinformatics workstation 🤗
+
+If you want the full stack image, you may follow the same steps omitting `-light` part to install the [`bioinformatics-toolbox`](https://ahmedmoustafa.github.io/bioinformatics-toolbox/).
 
 Happy Bioinformatics! 😉
