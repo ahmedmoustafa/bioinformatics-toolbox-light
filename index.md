@@ -1,16 +1,16 @@
 {% include gtag.js %}
 
-![DNA Mutation](https://media.gettyimages.com/vectors/mutation-vector-id94364734?s=1024x1024)
+![DNA Mutation](https://media.gettyimages.com/id/94364734/vector/dna-mutation.jpg?s=2048x2048&w=gi&k=20&c=D6efnedH6ue-s6VvdrNbaeX9rPvvPtWnbztb2nk5ljk=)
 
 Setting up a bioinformatics workstation can be a tedious and frustrating process. Sometimes, it might require a computer guru to set up bioinformatics tools, especially when it comes to the not-uncommon endless loop of dependencies between the tools and the libraries. So, an out-of-the-box preinstalled workstation can save a lot of time and hassle and allow you to focus on addressing your research questions instead of struggling to install and configure software packages. This applies to, for example, a BLAST search or genome mapping running on your personal laptop on your desk or a high-performance computing server in the data center at your institution.
 
 This short tutorial shows how to build a bioinformatics workstation on any computing device and operating system that supports [Docker](https://www.docker.com/), including laptops, servers, and workstations running Windows, Mac OS, or Linux. After completing these two steps, you will have a working system for bioinformatics analyses. What this tutorial is not is how to use the different bioinformatics tools bundled in the Docker image that we will install.
 
-![Container lift with shipping container in port](https://media.gettyimages.com/photos/container-lift-with-shipping-container-in-port-picture-id1032071672?s=2048x2048)
+![Container lift with shipping container in port](https://media.gettyimages.com/id/1032071672/photo/container-lift-with-shipping-container-in-port.jpg?s=2048x2048&w=gi&k=20&c=-8XoZS3s5dIF4h71hy4bJ7oj533I_kJ1AO3W6RGjTS8=)
 
 Docker is a [virtualization](https://en.wikipedia.org/wiki/Virtualization) engine, and more accurately, [containerization](https://www.ibm.com/cloud/learn/containerization). The two terms are not entirely the same, but we will use them interchangeably here for the sake of simplicity. This engine separates the virtual machine (the container) from the hosting operating system (e.g., your Windows or Mac). This separation includes all installations, configurations, and computes that happen within the container. So in a way, what happens in Docker stays in Docker.
 
-![USA, Nevada, Las Vegas, Welcome To Fabulous Las Vegas Nevada Sign](https://media.gettyimages.com/photos/nevada-las-vegas-welcome-to-fabulous-las-vegas-nevada-sign-picture-id1085183326?s=1024x1024)
+![USA, Nevada, downtown Las Vegas, neon signs on Fremont Street](https://media.gettyimages.com/id/AB11023/photo/usa-nevada-downtown-las-vegas-neon-signs-on-fremont-street.jpg?s=2048x2048&w=gi&k=20&c=m3yu-LRXVp_MsZm8xVvFrhFRL2Z1eVmWyFrZQLEjO94=)
 
 The beauty of virtualization/containerization is [**portability**](https://en.wikipedia.org/wiki/Porting) (run it anywhere) and [**reproducibility**](https://en.wikipedia.org/wiki/Reproducibility) (same infrastructure shared and available for anyone to rerun exact analyses and reproduce exact results). Usually, one creates a Docker image (we are not covering that here) with a specific set of tools and settings. Then, they share and distribute this exact image privately or publicly so others can use it as is without having to reinvent the wheel. There are other virtualization tools besides Docker, for example, [Oracle’s VirtualBox](https://www.virtualbox.org/) and [VMware](https://www.vmware.com/).
 
@@ -19,7 +19,7 @@ There are probably 100s of containers for bioinformatics, and they come in all s
 The following is a walkthrough of the *two* steps to get your bioinformatics workstation up and running. However, to speed up the download, we will use a smaller version of the toolbox, `bioinformatics-toolbox-light`, with a subset of the tools, as a proof-of-concept.
 
 ## Step 1. Install Docker
-Docker is available for free for Windows, Mac OS (for Apple and Intel chips), and Linux ([Ubuntu](https://ubuntu.com/), [CentOS](https://www.centos.org/), [Fedora](https://getfedora.org/), and others). First, go to [the Docker Desktop product page](https://www.docker.com/products/docker-desktop) to download the correct version for your systems and install it. Please refer to [the Docker Desktop documentation](https://docs.docker.com/desktop/) for further details on the installation steps [on Mac](https://docs.docker.com/docker-for-mac/install/) or [on Windows](https://docs.docker.com/docker-for-windows/install/). Basically, you want to start with the following screen (download page) to reach the screen after (installed and running Docker Desktop):
+Docker is available for free for Windows, Mac OS (for Apple and Intel chips), and Linux ([Ubuntu](https://ubuntu.com/), [CentOS](https://www.centos.org/), [Fedora](https://getfedora.org/), and others). First, go to [the Docker Desktop product page](https://www.docker.com/products/docker-desktop) to download the correct version for your systems and install it. Please refer to [the Docker Desktop documentation](https://docs.docker.com/desktop/) for further details on the installation steps [on Mac](https://docs.docker.com/docker-for-mac/install/) or [on Windows](https://docs.docker.com/docker-for-windows/install/). Basically, you want to start with the following screen (download page) to reach the screen after (installing and running Docker Desktop):
 
 ![Docker Desktop Homepage](images/docker-desktop-homepage.png)
 **The Docker Desktop Homepage**
@@ -38,7 +38,7 @@ The above command will attempt to launch the container, but the image is not loc
 
 This step will take time, depending on the speed of your Internet connection. In my case, it took about two hours to download the 20G image (This is the light version. The full version is larger than 40G). So, maybe it is time to go for coffee
 
-![Coffee](https://media.gettyimages.com/photos/aerial-view-of-various-coffee-picture-id1027165934?s=2048x2048)
+![Coffee](https://media.gettyimages.com/id/1027165934/photo/aerial-view-of-various-coffee.jpg?s=2048x2048&w=gi&k=20&c=kycXiaSjuMvCT7e3zJaH68LOg6F3UcBhGBMk2VGA5ww=)
 
 After the download is complete and successful, the container will start with all the already preinstalled tools. The `bioinformatics-toolbox-light` container is running now:
 
@@ -48,7 +48,7 @@ After the download is complete and successful, the container will start with all
 
 The next part is a toy example for using the bioinformatics toolbox container, which we have just installed. We will use BLAST to search for a SARS-CoV-2 isolate in a BLAST-formatted database of SARS-CoV-2 genomes ([`coronadb`](https://github.com/ahmedmoustafa/coronadb)). The database contains about 400,000 complete viral genomes obtained from [NCBI](https://www.ncbi.nlm.nih.gov/datasets/coronavirus/genomes/). `coronadb` is already included in the installed image. You can find it under directory `/data/coronadb`.
 
-![Vials of blood in a centrifuge being tested for coronavirus infection](https://media.gettyimages.com/illustrations/coronaviruses-research-conceptual-illustration-illustration-id1205741280?s=2048x2048)
+![Vials of blood in a centrifuge being tested for coronavirus infection](https://media.gettyimages.com/id/1205741280/vector/coronaviruses-research-conceptual-illustration.jpg?s=2048x2048&w=gi&k=20&c=z7yojoESRVY32nihUlX0isx_QViu_HnPxDZqzt-gJpQ=)
 
 So let's move to the `coronadb` directory using the following command:
 
